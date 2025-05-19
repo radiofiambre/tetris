@@ -1,43 +1,39 @@
-# Rock, Paper, Scissors game 👊✋✌️
+# 🎮 Tetris Game
 
-This is a simple interactive game where a player competes against a computer to reach 10 points. The game includes visual feedback, a victory popup, sound effects, and a reset function.
+A simple Tetris clone built using **vanilla JavaScript** and the **HTML5 Canvas API**. Includes keyboard controls, score tracking, block rotation, line clearing, and background music.
 
-## How to play
-1. Select a move from a dropdown menu (`Rock`, `Paper`, or `Scissors`).
-2. Click the **Play** button to challenge the computer. The computer's move is randomly generated and displayed alongside the result.
-3. The game will display the machine's move and the result of the turn.
-4. The first player to reach 10 points wins the round.
-5. When the round is over, a popup will appear with the result and a button to restart.
+## 🚀 Features
 
-## Features
-### Game Results and Scoring  
-Each round updates the score dynamically for both the human player and the computer.
-A message appears to indicate if the round was won, lost, or tied.
+- Classic Tetris gameplay with 7 unique pieces
+- Keyboard controls for movement and rotation
+- Gravity (automatic falling blocks)
+- Line clearing and score system
+- Game over detection
+- Background music playback
 
-### Win Popup  
-Once a player reaches 10 points, a popup appears in the center of the screen with a custom message indicating the winner. A button allows the user to restart the game.
+## 🎮 Controls
 
-### Sound Effects  
-Sound effects are triggered on win, lose, or draw events to enhance feedback and interactivity. Sounds are stored in the `public/audio` directory.
+| Key             | Action               |
+|------------------|------------------------|
+| ⬅️ Arrow Left      | Move piece left        |
+| ➡️ Arrow Right     | Move piece right       |
+| ⬇️ Arrow Down      | Move piece down faster |
+| ⬆️ Arrow Up        | Rotate piece           |
 
-🔊 Sound Credits: Pixabay.
+## 🧱 How It Works
 
-### Game Reset  
-Clicking the **Restart** button resets the score, clears the selections and messages, and hides the popup, allowing a new game to start.
+- The game is rendered on an HTML `<canvas>`, scaled with a fixed block size.
+- Pieces fall automatically at a timed interval.
+- Collision detection prevents pieces from overlapping.
+- Completed rows are removed and the score is updated.
+- A random piece is selected after each drop.
+- Game ends when a new piece collides at the top.
 
-## Technologies
 
-- **JavaScript**: For logic, DOM manipulation, and event handling
-- **HTML**: For structuring the interface
-- **CSS/SASS**: For layout, responsive design, and popup animations
-- **Vite**
+## ▶️ Getting Started
 
-## Installation and Use
-
-If you’re using [Vite](https://vitejs.dev/) for development:
-
-```bash
-git clone https://github.com/radiofiambre/piedra-papel-y-tijera.git
-cd rock-paper-scissors-game
-npm install
-npm run dev
+   ```bash
+   git clone https://github.com/your-username/tetris-js.git
+   cd tetris-js
+   npm install
+   npm run dev
