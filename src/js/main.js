@@ -17,7 +17,7 @@ canvas.height = BLOCK_SIZE * BOARD_HEIGHT;
 
 context.scale(BLOCK_SIZE, BLOCK_SIZE);
 
-const audio = new Audio("/audio/tetris.mp3");
+const audio = new Audio(`${import.meta.env.BASE_URL}audio/tetris.mp3`);
 
 
 // Canvas
